@@ -1,0 +1,21 @@
+.main-nav {
+    width: 270px;
+    padding-right: 10px;
+  &--link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 37px;
+    font-weight: 500;
+    line-height: 24px;
+    &:hover {
+      color: $Violet;
+      .main-nav--ico {
+        fill: $Violet;
+      }
+    }
+  }
+  &--ico {
+    margin-right: 15px;
+  }
+}

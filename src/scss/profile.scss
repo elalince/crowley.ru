@@ -1,0 +1,146 @@
+
+.profile {
+
+  &--left {
+    width: 380px;
+    margin-right: 10px;
+  }
+
+  &--right {
+    flex: 1;
+  }
+
+  &__block {
+    padding: 15px 25px;
+  }
+
+  &__image {
+    border-radius: 8px;
+  }
+
+  &__main-info {
+    position: relative;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 26px;
+
+    span {
+      font-weight: 400;
+      font-size: 13px;
+      color: $PochtiWhite;
+    }
+  }
+  &__nickname {
+    font-weight: 500;
+    font-size: 15px;
+    color: $Grey;
+    span {
+      font-weight: 400;
+    }
+  }
+  &__status {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: $LightGrey;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  &__status-color {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 2px;
+    &--online {
+      background: $KatPink;
+    }
+  }
+  &__quote {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  &__counts {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  &__counts-block {
+    flex: 1;
+    text-align: center;
+    .count {
+      font-size: 26px;
+      font-weight: 500;
+      color: $Violet;
+    }
+    .label {
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+  &__info-block {
+    margin-bottom: 20px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+  &__info--full {
+    .profile__info-block--hidden {
+      display: block;
+    }
+  }
+  &__block-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  &__block-link {
+    font-size: 16px;
+    color: $LightViolet;
+    &:hover {
+      color: $Violet;
+    }
+  }
+  &__info-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: 500;
+    margin-top: 5px;
+    .label {
+      color: $LightGrey;
+      width: 220px;
+      min-width: 220px;
+      max-width: 220px;
+    }
+    .value {
+      a {
+        color: $Violet;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__info-btn {
+    background: $LightViolet;
+    color: $White;
+    height: 32px;
+    &:hover {
+      background: $Violet;
+    }
+    &:after {
+      content: 'показать подробную информацию';
+    }
+    &--active:after {
+      content: 'скрыть подробную информацию';
+    }
+  }
+}
